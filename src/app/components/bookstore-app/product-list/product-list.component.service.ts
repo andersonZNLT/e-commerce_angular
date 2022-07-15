@@ -5,10 +5,10 @@ import { Book } from "./model/book";
 @Injectable()
 
 export class BookService {
-    private url = 'url da API que nunca contruímos https://localhost:44382/api/bookstore';
+    private url = 'url da API que nunca construímos https://localhost:44382/api/bookstore';
 
-    hhtpOptions = {
-        Headers: new HttpHeaders ({'content-type': 'appplication/json'})        
+    httpOptions = {
+        Headers: new HttpHeaders ({'content-type': 'application/json'})        
     }
 
     constructor(private http:HttpClient) {}
